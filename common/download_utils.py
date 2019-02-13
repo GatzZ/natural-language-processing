@@ -34,6 +34,7 @@ def download_from_github(version, fn, target_dir, force=False):
     if os.path.exists(file_path) and not force:
         print("File {} is already downloaded.".format(file_path))
         return
+    print(url)
     download_file(url, file_path)
 
 
